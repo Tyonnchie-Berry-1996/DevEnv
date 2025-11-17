@@ -162,7 +162,6 @@ tomli
 tox
 tox-travis
 tqdm
-typed-ast
 types-decorator
 typing-extensions
 typing-inspection
