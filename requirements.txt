@@ -81,7 +81,6 @@ jsonpath-rw==1.4.0
 k5test==0.10.1
 krb5==0.4.1
 lazy-object-proxy==1.7.1
-lxml==4.6.4
 markdown-it-py==2.2.0
 MarkupSafe==2.0.1
 mccabe==0.6.1
@@ -122,7 +121,6 @@ python-dateutil==2.9.0.post0
 python-dev-tools==2020.9.10
 pytz==2021.3
 pyupgrade==2.32.0
-PyYAML==5.4.1
 random2==1.0.1
 randomit==0.2.7
 recommonmark==0.7.1
