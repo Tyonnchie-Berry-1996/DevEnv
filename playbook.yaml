@@ -5,8 +5,6 @@
   become_method: sudo
   gather_facts: yes
 
-# ansible-playbook playbook.yaml -K
-
   tasks:
     - name: Install required packages
       dnf:
