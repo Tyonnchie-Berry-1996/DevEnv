@@ -1,0 +1,61 @@
+- name: Install Packages
+  hosts: localhost
+  connection: local
+  become_user: root
+  become_method: sudo
+  gather_facts: yes
+
+# ansible-playbook playbook.yaml -K
+
+  tasks:
+    - name: Install required packages
+      dnf:
+        name:
+          - yum-utils
+          - dnf-plugins-core
+          - krb5-workstation
+          - krb5-libs
+          - krb5-devel
+          - openssl
+          - openssh
+          - sssd-client
+          - koji
+          - python3
+          - python3-devel
+          - python3-pip
+          - git
+          - gcc
+          - python3-libselinux
+          - mock
+          - fedpkg
+          - ipa-client
+          - ipa-admintools
+          - elfutils-devel
+          - binutils-devel
+          - audit-libs-devel
+          - java-devel
+          - pciutils-devel
+          - ncurses-devel
+          - elfutils-libelf-devel
+          - numactl-devel
+          - flex
+          - bison
+          - pesign
+          - fedora-packager
+          - fedora-review
+          - man-pages
+          - man
+          - vim
+          - openldap-clients
+          - openldap-devel
+          - python3-tox
+          - lcov
+          - clang-analyzer
+          - valgrind
+          - tox
+          - jq
+          - lolcat
+          - toilet
+
+        state: latest
+      when: ansible_distribution == 'Fedora'
