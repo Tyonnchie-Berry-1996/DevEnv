@@ -21,6 +21,8 @@ python3 -m pip install --no-cache-dir --upgrade pip setuptools wheel \
     --disable-pip-version-check \
     --no-python-version-warning \
     --no-warn-script-location 
+    
+python3 -m pip install --no-cache-dir --no-deps -r requirements.txt
 
 echo "Python 3 Setup Complete!"
 
