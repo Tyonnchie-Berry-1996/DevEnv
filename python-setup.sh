@@ -30,6 +30,8 @@ rm -rf playbook.yaml
 
 dnf -y install libxml2-devel libxslt-devel
 
+dnf -y install python3-tkinter tk
+
 dnf5 -y group install c-development
 
 dnf5 -y group install development-tools
