@@ -62,6 +62,8 @@ frozenlist
 gensim
 gitdb
 GitPython
+google-auth-oauthlib
+google-api-python-client
 graphviz
 gssapi
 h11
@@ -108,6 +110,7 @@ protobuf
 py
 pyasn1
 pycodestyle
+pycountry
 pycparser
 pydantic
 pydantic-core
@@ -141,6 +144,7 @@ setuptools
 six
 smart-open
 smmap
+smooth-google-api-client
 sniffio
 snowballstemmer
 soupsieve
