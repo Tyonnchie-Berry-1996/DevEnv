@@ -5,6 +5,7 @@ ENV KRB5CCNAME=FILE:/etc/krb5.conf.d/kcm_default_ccache
 
 RUN rm -f /etc/krb5.conf
 COPY krb5.conf /etc
+COPY requirements.txt /
 
 RUN dnf -y install ansible-playbook
 
