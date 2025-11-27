@@ -20,17 +20,17 @@ python3 -m ensurepip --upgrade
 python3 -m pip install --no-cache-dir --upgrade pip setuptools wheel \
     --disable-pip-version-check \
     --no-python-version-warning \
-    --no-warn-script-location 
-    
+    --no-warn-script-location
+
 python3 -m pip install --no-cache-dir --no-deps -r requirements.txt
+
+pip install --no-cache-dir --no-deps google-api-python-client
 
 echo "Python 3 Setup Complete!"
 
 rm -rf playbook.yaml
 
 dnf -y install libxml2-devel libxslt-devel
-
-dnf -y install python3-tkinter tk
 
 dnf5 -y group install c-development
 
@@ -43,6 +43,7 @@ cd /home
 mkdir src
 
 cd /home/src
+
 
 clear
 
