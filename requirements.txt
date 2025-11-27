@@ -62,8 +62,6 @@ frozenlist
 gensim
 gitdb
 GitPython
-google-auth-oauthlib
-google-api-python-client
 graphviz
 gssapi
 h11
