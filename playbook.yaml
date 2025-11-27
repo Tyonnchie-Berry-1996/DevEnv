@@ -26,6 +26,7 @@
           - python3-libselinux
           - mock
           - fedpkg
+          - gh
           - ipa-client
           - ipa-admintools
           - elfutils-devel
