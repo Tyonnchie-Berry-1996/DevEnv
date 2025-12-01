@@ -108,7 +108,7 @@ tell me my user name
 
   But what if you want to take your favorite version + its packages and use them with a newer Python release?
 
-  Normally, trying to "just upgrade” Python and reuse everything breaks half your stack, wipes out dependencies, and forces you to take a mental health break.       This project is my way of avoiding that: a cleaner path to carry forward the environment you like without wrecking your system. Run the commands below on your     host machine.
+  Normally, trying to "just upgrade” Python and reuse everything breaks half your stack, wipes out dependencies, and forces you to take a mental health break.       This project is my way of avoiding that: a cleaner path to carry forward the environment you like without wrecking your system. Run the commands below on your     host machine. For the example below I'm assuming you have a src directory located at /home/$USER/src. If you don't please make one before following along <code> cd /home/$USER </code> <code> mkdir src </code>
   </p>
 
 1. **Get package names (no versions)**
@@ -117,6 +117,7 @@ tell me my user name
    ```
 2. **Save to file**
    ```bash
+   cd /home/$USER/src
    python3.9 -m pip list --format=freeze | cut -d'=' -f1 > requirements-no-versions.txt
    ```
 3. **Run it against the latest python**
@@ -125,12 +126,24 @@ tell me my user name
    ```
 4. **Refactor, rebuild, reuse the container**
    ```bash
-   cd /home/{$whoami}
+   cd /home/$USER/src
+   git clone https://github.com/Tyonnchie-Berry-1996/DevEnv.git
    ```
    ```bash
-   git clone 
+   cd DevEnv/
    ```
-  
+   ```bash
+   rm requirements.txt 
+   ```
+   ```bash
+   mv ../requirements-no-versions.txt DevEnv/
+   ```
+   ```bash
+   docker build -t DevEnv:latest .
+   ```
+   ```bash
+   docker run -it DevEnv:latest
+
   </main>
 </body>
 </html>
