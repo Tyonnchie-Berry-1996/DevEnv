@@ -4,7 +4,7 @@
   <header>
     <h1>Dev-Env</h1>
     <p class="tagline">
-      Lightweight Fedora-based dev environment for Linux kernel, automation, and systems engineering that bootstraps your tool-chain on first run. The toolchain          includes libraries and utilities needed to build Linux kernels, plus solid support for Python-heavy development. It has enough tooling to build kernels and        test out some of my repositories—or your own projects. If you bring your own code, just follow the steps below; while your specific Python packages may not be preinstalled, the environment is designed so you can simply run pip3 install &lt;your-python-package&gt; and be up and running quickly.
+      Lightweight Fedora-based dev environment for Linux kernel, automation, and systems engineering that bootstraps your tool-chain on first run. The toolchain          includes libraries and utilities needed to build Linux kernels, plus solid support for Python-heavy development. It has enough tooling to build kernels and        test out some of my repositories—or your own projects. If you bring your own code, just follow the steps at the end; while your specific Python packages may not be preinstalled, the environment is designed so you can simply run pip3 install &lt;your-python-package&gt; and be up and running quickly.
     </p>
     <p>
       Docker Hub:
@@ -27,7 +27,7 @@
       </ul>
       <p>
         Instead of shipping a huge image with everything pre-installed, this container starts small and
-        <strong>bootstraps the full toolchain on first run</strong> via setup bash scripting & ansible playbook.
+        <strong>bootstraps the full tool-chain on first run</strong> via bash scripting/ansible playbook.
         This keeps pulls fast while still giving you a reproducible environment.
       </p>
   <strong>Prerequisites</strong>
@@ -61,7 +61,7 @@
     When prompted, enter <strong>your Fedora account password</strong> to complete Kerberos initialization.
   </p>
   <p>
-    When running the AI assistant make sure you have your OpenAI API key ready to be copied and pasted into the container. You can find your API key here at            https://platform.openai.com/api-keys. You also will need tokens for this script to run, you can find out about your account tokens here at https://platform.openai.com/settings/organization/billing/overview. The script doesn't work without unless it has an API key and account tokens available.   
+    When running the AI assistant make sure you have your OpenAI API key ready to be copied and pasted into the container. You can find your API key here at            https://platform.openai.com/api-keys. You also will need tokens for this script to run, you can find out about your account tokens here at https://platform.openai.com/settings/organization/billing/overview. The script doesn't work unless it has an API key and account tokens available.   
   </p>
     
    ```bash
@@ -73,6 +73,22 @@
    ```bash
    python3 ../AI-Bash-Assistant.py
    ```
+***Use the questions below one at a time to prompt your AI assistant***
+```bash
+system update and system upgrade
+Make a new bash file, name it bashfile.sh, and make sure that it prints my user name, date and time when executed
+excute bashfile.sh
+remove bashfile.sh
+clear current terminal display
+list all files in current dir
+what distro am i running 
+whats my ip addy 
+I need a scratch build fedora f41
+list kerberos 
+destroy all active kerberos
+tell me my user name 
+```
+
 
 <h2>Try out the API scripts</h2>
   <p> <strong>Important note:</strong> When running <code>Bug_Query.py</code> make sure you have your Bugzilla API key ready to copy/paste into the container.  
