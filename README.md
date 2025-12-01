@@ -141,7 +141,7 @@ tell me my user name
    docker run -it dev-env:latest
    ```
    ```bash
-   ls failed
+   cat failed_packages.log
    ```
 
   </main>
