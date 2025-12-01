@@ -120,7 +120,7 @@ tell me my user name
    cd /home/$USER/src
    python3.9 -m pip list --format=freeze | cut -d'=' -f1 > requirements-no-versions.txt
    ```
-3. **Refactor, rebuild, reuse the container**
+3. **Refactor, rebuild, reuse**
    ```bash
    git clone https://github.com/Tyonnchie-Berry-1996/DevEnv.git
    ```
