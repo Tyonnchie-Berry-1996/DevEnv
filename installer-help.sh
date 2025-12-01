@@ -6,6 +6,6 @@ while read -r pkg; do
   [[ "$pkg" =~ ^# ]] && continue
 
   echo "=== Installing $pkg ==="
-  pip3 install "$pkg" || echo "FAILED: $pkg" >> failed_packages.log
+  python3 -m pip install "$pkg" || echo "FAILED: $pkg" >> failed_packages.log
 done < requirements.txt
 
