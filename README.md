@@ -131,7 +131,7 @@ tell me my user name
    rm requirements.txt 
    ```
    ```bash
-   mv ../requirements-no-versions.txt DevEnv/
+   mv ../requirements-no-versions.txt $(pwd)
    ```
    ```bash
    docker build -t DevEnv:latest .
