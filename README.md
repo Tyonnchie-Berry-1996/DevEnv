@@ -45,7 +45,7 @@
    ```bash
    docker run -it tyonnchieberry/dev-env:latest
    ```
-3. **Test some automation and paste these steps into the container**
+3. **Test out the repo setup automation**
    ```bash
    git clone https://github.com/Tyonnchie-Berry-1996/Container-Repo-Automation.git
    ```
@@ -53,13 +53,7 @@
    mv Container-Repo-Automation/repo-setup.sh $(pwd)
    chmod +x repo-setup.sh
    ./repo-setup.sh
-   ```
-   ```bash
-   ./git-remote-fetch
-   ```
-   ```bash
-   ./git-pull.sh
-   ```       
+   ```     
 <h2>Try out the AI Bash Assistant</h2>
   <p>
     <strong>Important note:</strong> Kerberos is configured to authenticate against <strong>FEDORAPROJECT.ORG</strong> If you already have a fedora account setup,
