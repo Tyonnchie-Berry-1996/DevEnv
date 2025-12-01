@@ -123,7 +123,10 @@ tell me my user name
    ```bash
    python3 -m pip install -r requirements-no-versions.txt
    ```
-
+4. **Refactor, rebuild, reuse the container**
+   ```bash
+   cd /home/{$whoami}
+   ```
    ```bash
    git clone 
    ```
