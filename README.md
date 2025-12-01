@@ -122,7 +122,6 @@ tell me my user name
    ```
 3. **Refactor, rebuild, reuse the container**
    ```bash
-   cd /home/$USER/src
    git clone https://github.com/Tyonnchie-Berry-1996/DevEnv.git
    ```
    ```bash
