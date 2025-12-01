@@ -4,7 +4,7 @@
   <header>
     <h1>Dev-Env</h1>
     <p class="tagline">
-      Lightweight Fedora-based dev environment for Linux kernel, automation, and systems engineering that bootstraps your tool-chain on first run.
+      Lightweight Fedora-based dev environment for Linux kernel, automation, and systems engineering that bootstraps your toolchain on first run. The toolchain          includes libraries and utilities needed to build Linux kernels, plus solid support for Python-heavy development. It has enough tooling to build kernels and        test out some of my repositories—or your own projects. If you bring your own code, just follow the steps below; while your specific           Python packages may not be preinstalled, the environment is designed so you can simply run pip3 install &lt;your-python-package&gt; and be up and running          quickly.
     </p>
     <p>
       Docker Hub:
@@ -18,29 +18,22 @@
     <section>
       <h2>Overview</h2>
       <p>
-        <code>tyonnchieberry/dev-env</code> is a <strong>lightweight Fedora-based developer environment</strong>
+        <code>Dev-Env</code> is a <strong>lightweight Fedora-based developer environment</strong>
         tailored for:
       </p>
       <ul>
-        <li>Linux kernel and systems engineering</li>
-        <li>Python-based automation and API scripting</li>
-        <li>Release engineering / RPM experimentation</li>
+        <li>Linux kernel builds</li>
+        <li>Python Development</li>
         <li>General CLI and homelab tooling</li>
       </ul>
       <p>
         Instead of shipping a huge image with everything pre-installed, this container starts small and
-        <strong>bootstraps the full toolchain on first run</strong> via setup scripts/playbooks.
+        <strong>bootstraps the full toolchain on first run</strong> via setup bash scripting & ansible playbook.
         This keeps pulls fast while still giving you a reproducible environment.
       </p>
+  
 
-      <div>
-        <span class="pill">Fedora-based</span>
-        <span class="pill">Lightweight image</span>
-        <span class="pill">Kernel / systems dev</span>
-        <span class="pill">Python automation</span>
-        <span class="pill">Docker-native workflow</span>
-      </div>
-    </section>
+        </section>
 
     <section>
       <h2>Prerequisites</h2>
