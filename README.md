@@ -139,6 +139,10 @@ tell me my user name
    ```
    ```bash
    docker run -it dev-env:latest
+   ```
+   ```bash
+   ls failed
+   ```
 
   </main>
 </body>
