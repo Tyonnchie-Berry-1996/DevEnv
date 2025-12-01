@@ -22,7 +22,8 @@ python3 -m pip install --no-cache-dir --upgrade pip setuptools wheel \
     --no-python-version-warning \
     --no-warn-script-location
 
-python3 -m pip install --no-cache-dir --no-deps -r requirements.txt
+sh installer-help.sh
+#python3 -m pip install --no-cache-dir --no-deps -r requirements.txt
 
 python3 -m pip install google-api-python-client
 
