@@ -55,10 +55,10 @@
    ./repo-setup.sh
    ```
    ```bash
-   ./git-remote-fetch.sh
+   ./git-remote-fetch
    ```
    ```bash
-   ./git-pull
+   ./git-pull.sh
    ```       
 <h2>Try out the AI Bash Assistant</h2>
   <p>
