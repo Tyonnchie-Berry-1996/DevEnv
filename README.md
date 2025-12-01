@@ -132,12 +132,13 @@ tell me my user name
    ```
    ```bash
    mv ../requirements-no-versions.txt $(pwd)
+   mv requirements-no-versions.txt requirements.txt
    ```
    ```bash
-   docker build -t DevEnv:latest .
+   docker build -t dev-env:latest .
    ```
    ```bash
-   docker run -it DevEnv:latest
+   docker run -it dev-env:latest
 
   </main>
 </body>
