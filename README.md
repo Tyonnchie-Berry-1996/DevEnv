@@ -2,7 +2,7 @@
 <html lang="en">
 <body>
   <header>
-    <h1>Dev-env</h1>
+    <h1>Dev-Env</h1>
     <p class="tagline">
       Lightweight Fedora-based dev environment for Linux kernel, automation, and systems engineering that bootstraps your tool-chain on first run.
     </p>
@@ -10,11 +10,6 @@
       Docker Hub:
       <a href="https://hub.docker.com/r/tyonnchieberry/dev-env" target="_blank" rel="noopener">
         hub.docker.com/r/tyonnchieberry/dev-env
-      </a>
-      &nbsp;|&nbsp;
-      GitHub:
-      <a href="https://github.com/Tyonnchie-Berry-1996" target="_blank" rel="noopener">
-        github.com/Tyonnchie-Berry-1996
       </a>
     </p>
   </header>
