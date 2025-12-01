@@ -86,7 +86,7 @@ whats my ip addy
 I need a scratch build fedora f41
 list kerberos 
 destroy all active kerberos
-tell me my user name 
+tell me who i am 
 ```
 
 
