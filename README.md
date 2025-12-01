@@ -54,17 +54,38 @@
    chmod +x repo-setup.sh
    ./repo-setup.sh
    ```       
-    <h2>Try out the AI Bash Assistant</h2>
-    <p>
-      Important note: Kerberos for this container syncs with FEDORAPROJECT.ORG. If you use fedora/have a fedora account setup
-      for the command below use your fedora username and password to init kerberos.
-
-      Inside the container run this command below with your fedora username and when prompted use your fedora password
-    </p>
+<h2>Try out the AI Bash Assistant</h2>
+  <p>
+    <strong>Important note:</strong> Kerberos is configured to authenticate against <strong>FEDORAPROJECT.ORG</strong> If you already have a fedora account setup,
+    use your Fedora username and password when initializing Kerberos. Inside the container, run the command below with <strong>your Fedora username</strong>.  
+    When prompted, enter <strong>your Fedora account password</strong> to complete Kerberos initialization.
+  </p>
+  <p>
+    When running the AI assistant make sure you have your OpenAI API key ready to be copied and pasted into the container. You can find your API key here at            https://platform.openai.com/api-keys. You also will need tokens for this script to run, you can find out about your account tokens here at https://platform.openai.com/settings/organization/billing/overview. The script doesn't work without unless it has an API key and account tokens available.   
+  </p>
     
-    ```bash
-    kinit {your_fedora_username}
-    ```
+   ```bash
+   kinit your_fedora_username
+   ```
+   ```bash
+   cd AI-Bash-Assistant-Prototype/kernel/
+   ```
+   ```bash
+   python3 ../AI-Bash-Assistant.py
+   ```
+
+<h2>Try out the API scripts</h2>
+  <p> <strong>Important note:</strong> When running <code>Bug_Query.py</code> make sure you have your Bugzilla API key ready to copy/paste into the container.  
+      You can find your API key here: https://bugzilla.redhat.com/userprefs.cgi?tab=apikey All python scripts in this folder are executable by prefixing them             with <code>./</code>  
+  </p>
+    
+**Try one out**
+   ```bash
+   cd /home/src/Scripts-For-Dev-Env
+   ```
+   ```bash
+   ./Gmail-List.py
+   ```
   </main>
 </body>
 </html>
