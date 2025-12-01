@@ -53,6 +53,12 @@
    mv Container-Repo-Automation/repo-setup.sh $(pwd)
    chmod +x repo-setup.sh
    ./repo-setup.sh
+   ```
+   ```bash
+   ./git-remote-fetch.sh
+   ```
+   ```bash
+   ./git-pull
    ```       
 <h2>Try out the AI Bash Assistant</h2>
   <p>
