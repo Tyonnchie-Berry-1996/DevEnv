@@ -45,7 +45,7 @@
    ```bash
    docker run -it tyonnchieberry/dev-env:latest
    ```
-3. **Test out the repo setup automation**
+3. **Test out some repo automation**
    ```bash
    git clone https://github.com/Tyonnchie-Berry-1996/Container-Repo-Automation.git
    ```
@@ -91,9 +91,15 @@ tell me who i am
 
 
 <h2>Try out the API scripts</h2>
-  <p> <strong>Important note:</strong> When running <code>Bug_Query.py</code> make sure you have your Bugzilla API key ready to copy/paste into the container.  
-      You can find your API key here: https://bugzilla.redhat.com/userprefs.cgi?tab=apikey All python scripts in this folder are executable by prefixing them             with <code>./</code>  
+  <p> <strong>Important note:</strong> When running <code>Bug_Query.py</code> make sure you have your Bugzilla API key ready to be copied/pasted into the container.  
+      You can find your API key here: https://bugzilla.redhat.com/userprefs.cgi?tab=apikey 
   </p>
+
+  <p> <strong>Important note:</strong> When running <code>YouTube-API.py</code> make sure you have your Youtube API key and Youtube channel id ready to copied/pasted into the container. 
+      Check later for steps on how to find your Youtube API key and Channel id.
+  </p>
+  
+  <p>All python scripts in this folder are executable by prefixing them with <code>./</code>  </p>
     
 **Try one out**
    ```bash
@@ -140,6 +146,7 @@ tell me who i am
    ```bash
    docker run -it dev-env:latest
    ```
+   ***If you want to check and see which packages failed***
    ```bash
    cat /failed_packages.log
    ```
