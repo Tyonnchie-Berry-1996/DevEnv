@@ -4,7 +4,7 @@
   <header>
     <h1>Dev-Env</h1>
     <p class="tagline">
-      Lightweight Fedora-based dev environment for Linux kernel, automation, and systems engineering that bootstraps your tool-chain on first run. The toolchain          includes libraries and utilities needed to build Linux kernels, plus solid support for Python-heavy development. It has enough tooling to build kernels and        test out some of my repositories—or your own projects. If you bring your own code, just follow the steps at the end; while your specific Python packages may not be preinstalled, the environment is designed so you can simply run pip3 install &lt;your-python-package&gt; and be up and running quickly.
+      Lightweight Fedora-based dev environment for Linux kernel, automation, and systems engineering that bootstraps your tool-chain on first run. The toolchain          includes libraries and utilities needed to build Linux kernels, plus solid support for Python-heavy development. It has enough tooling to build kernels and        test out some of my repositories—or your own projects. If you bring your own code, just follow the steps at the end; while your specific Python packages may not be preinstalled, the environment is designed so you can simply run pip3 install <code>your-python-package</code> and be up and running quickly.
     </p>
     <p>
       Docker Hub:
