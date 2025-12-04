@@ -114,7 +114,9 @@ tell me who i am
 
   But what if you want to take your favorite version + its packages and use them with a newer Python release?
 
-  Normally, trying to "just upgrade” Python and reuse everything breaks half your stack, wipes out dependencies, and forces you to take a mental health break.       This project is my way of avoiding that: a cleaner path to carry forward the environment you like without wrecking your system. Run the commands below on your host machine. After the last step, you’ll see which installs succeeded and which failed. If a package fails, just let the Bash script finish— it will continue looping through the rest and write any failures to failed_packages.log so you can review them later. For the example below I'm assuming you have a src directory located at <code>/home/$USER/src</code>. If you don't please make one before following along <code> cd /home/$USER </code> <code> mkdir src </code>
+  Normally, trying to "just upgrade” Python and reuse everything breaks half your stack, wipes out dependencies, and forces you to take a mental health break.       This project is my way of avoiding that: a cleaner path to carry forward the environment you like without wrecking your system. 
+  
+  Run the commands below on your host machine. After the last step, you’ll see which installs succeeded and which failed. If a package fails, just let the Bash script finish— it will continue looping through the rest and write any failures to failed_packages.log so you can review them later. For the example below I'm assuming you have a src directory located at <code>/home/$USER/src</code>. If you don't please make one before following along <code> cd /home/$USER </code> <code> mkdir src </code>
   </p>
 
 1. **Get package names (no versions)**
@@ -150,6 +152,19 @@ tell me who i am
    ```bash
    cat /failed_packages.log
    ```
+My favorite version of python is <code>python3.9</code> feel free to replace my favorite version with your favorite version. For example if yours is  <code>python3.10</code> you could do this for steps 1 and 2 
+
+1. **Get package names (no versions)**
+   ```bash
+   python3.10 -m pip list --format=freeze | cut -d'=' -f1
+   ```
+2. **Save to file**
+   ```bash
+   cd /home/$USER/src
+   python3.10 -m pip list --format=freeze | cut -d'=' -f1 > requirements-no-versions.txt
+   ```
+   >Proceed with the rest of the steps for refactor,rebuild, reuse
+
 
   </main>
 </body>
