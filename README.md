@@ -156,12 +156,12 @@ My favorite version of python is <code>python3.9</code> feel free to replace my 
 
 1. **Get package names (no versions)**
    ```bash
-   python3.10 -m pip list --format=freeze | cut -d'=' -f1
+   python3.11 -m pip list --format=freeze | cut -d'=' -f1
    ```
 2. **Save to file**
    ```bash
    cd /home/$USER/src
-   python3.10 -m pip list --format=freeze | cut -d'=' -f1 > requirements-no-versions.txt
+   python3.11 -m pip list --format=freeze | cut -d'=' -f1 > requirements-no-versions.txt
    ```
    >Proceed with the rest of the steps for refactor, rebuild, reuse
 
