@@ -152,7 +152,7 @@ tell me who i am
    ```bash
    cat /failed_packages.log
    ```
-My favorite version of python is <code>python3.9</code> feel free to replace my favorite version with your favorite version. For example if yours is  <code>python3.10</code> you could do this for steps 1 and 2 
+My favorite version of python is <code>python3.9</code> feel free to replace my favorite version with your favorite version. For example if yours is  <code>python3.11</code> you could do this for steps 1 and 2 
 
 1. **Get package names (no versions)**
    ```bash
