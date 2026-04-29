@@ -77,7 +77,7 @@
 ```bash
 system update and system upgrade
 Make a new bash file, name it bashfile.sh, and make sure that it prints my user name, date and time when executed
-excute bashfile.sh
+execute the file bashfile.sh
 remove bashfile.sh
 clear current terminal display
 list all files in current dir
