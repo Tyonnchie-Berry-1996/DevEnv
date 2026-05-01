@@ -76,7 +76,7 @@
 ***Use the questions below one at a time to prompt your AI assistant***
 ```bash
 system update and system upgrade
-Make a new bash file, name it bashfile.sh, and make sure that it prints my user name, date and time when executed
+Make a new bash file, name it bashfile.sh, and echo my user name, date and time into the file
 execute the file bashfile.sh
 remove bashfile.sh
 clear current terminal display
