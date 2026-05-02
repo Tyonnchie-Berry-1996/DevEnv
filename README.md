@@ -77,7 +77,8 @@
 ```bash
 system update and system upgrade
 init kerberos for user [your_fedora_username]
-Make a new bash file, name it bashfile.sh, and echo my user name, date and time into the file
+Make a new bash file, name it bashfile.sh
+echo my user name, date and time into bashfile.sh
 execute the file bashfile.sh
 remove bashfile.sh
 clear current terminal display
