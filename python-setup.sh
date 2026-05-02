@@ -10,7 +10,6 @@ dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-releas
 ansible-playbook playbook.yaml
 
 echo "Setting Up Python Environment"
-chmod +x target.sh
 
 # Ensure pip is installed and upgraded
 python3 -m ensurepip --upgrade
