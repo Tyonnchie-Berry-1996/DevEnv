@@ -84,7 +84,9 @@ clear current terminal display
 list all files in current dir
 what distro am i running 
 whats my ip addy 
-I need a scratch build fedora f41
+scratch build
+kernel build
+mock build
 list kerberos 
 destroy all active kerberos
 tell me who i am 
