@@ -75,6 +75,7 @@
    ```
 ***Use the questions below one at a time to prompt your AI assistant***
 ```bash
+what time is it
 system update and system upgrade
 init kerberos for user [your_fedora_username]
 Make a new bash file, name it bashfile.sh
