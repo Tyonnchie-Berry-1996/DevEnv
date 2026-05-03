@@ -88,7 +88,6 @@ what distro am i running
 whats my ip addy 
 scratch build
 kernel build
-mock build
 list kerberos 
 destroy all active kerberos
 tell me who i am 
