@@ -43,7 +43,7 @@
    ```
 2. **Run It**
    ```bash
-   docker run -it tyonnchieberry/dev-env:latest
+   docker run -it --privileged tyonnchieberry/dev-env:latest
    ```
 3. **Test out some repo automation**
    ```bash
