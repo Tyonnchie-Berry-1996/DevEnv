@@ -120,7 +120,7 @@ tell me who i am
 
   Normally, trying to "just upgrade” Python and reuse everything breaks half your stack, wipes out dependencies, and forces you to take a mental health break.       This project is my way of avoiding that: a cleaner path to carry forward the environment you like without wrecking your system. 
   
-  Run the commands below on your host machine. After the last step, you’ll see which installs succeeded and which failed. If a package fails, just let the Bash script finish— it will continue looping through the rest and write any failures to failed_packages.log so you can review them later. For the example below I'm assuming you have a src directory located at <code>/home/$USER/src</code>. If you don't please make one before following along <code> cd /home/$USER </code> <code> mkdir src </code>
+  Run the commands below on your host machine. After the last step, you’ll see which installs succeeded and which failed. If a package fails, just let the Bash script finish— it will continue looping through the rest and write any failures to failed_packages.log so you can review them later. For the example below I'm assuming you have a src directory located at <code>/home/$USER/src</code>. If you don't please make one before following along <code>cd /home/$USER</code> <code>mkdir src</code>
   </p>
 
 1. **Get package names (no versions)**
